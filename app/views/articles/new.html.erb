@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="title d-flex justify-content-between align-items-center border-bottom">
+    <h1>Wikinimous</h1>
+
+    <div class="add">
+      <p class="button-action"><i class="fa-solid fa-plus"></i> <%= link_to "Ajoutez un article", articles_new_path %></p>
+    </div>
+  </div>
+
+  <div class="article">
+    <%= render "form", article: @article %>
+
+    <p class="button-action border-top mt-3 pt-2"><i class="fa-solid fa-rotate-left"></i> <%= link_to "Annuler", articles_path %></p>
+  </div>
+</div>

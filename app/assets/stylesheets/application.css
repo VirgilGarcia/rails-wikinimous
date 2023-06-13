@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+ .title {
+  margin-bottom: 20px;
+  height: 100px;
+ }
+
+ .title h1 {
+  margin-bottom: 1rem!important;
+ }
+
+article {
+  margin-bottom: 25px;
+  color: rgb(148, 148, 148);
+ }
+
+article a {
+  color: rgb(89, 89, 231);
+  text-decoration: none;
+ }
+
+ article a:hover {
+  text-decoration: underline;
+ }
+
+ .button-action {
+   color: rgb(89, 89, 231);
+  }
+
+  .button-action a {
+    text-decoration: none;
+ }
+
+ .info-list {
+  background-color: rgb(211, 211, 211);
+ }

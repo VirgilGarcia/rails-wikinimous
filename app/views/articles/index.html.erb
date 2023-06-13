@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="title d-flex justify-content-between align-items-center border-bottom">
+    <h1>Wikinimous</h1>
+
+    <div class="add">
+      <p class="button-action"><i class="fa-solid fa-plus"></i> <%= link_to "Ajoutez un article", articles_new_path %></p>
+    </div>
+  </div>
+
+  <div class="article">
+      <% @articles.each do |article| %>
+        <article>
+          <h2><%= link_to article.title, article_path(article.id) %></h2>
+          <%= article.content %>
+        </article>
+      <% end %>
+  </div>
+</div>
